@@ -33,6 +33,7 @@ ul {
 .header {
     padding: 24px 0;
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .container-header {
@@ -107,10 +108,10 @@ ul {
 }
 .link-adress {
     text-decoration: none;
-    color: #2E2F42;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 500ms ease-out;
 }
 
 .link-adress:focus,
@@ -125,6 +126,22 @@ ul {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
+    position: relative;
+    transition: color 500ms ease-out;
+    
+}
+
+.link-nav:focus::after,
+.link-nav:hover::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+
+
 }
 
 .link-nav:focus,
@@ -134,10 +151,16 @@ ul {
 
  /* ПЕРШИЙ БЛОК */
 .section-title {
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7)) url(../images/people-office.jpeg);
     background: #2E2F42;
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpeg);
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
+
 .title {
     margin-bottom: 48px;
     color: #FFF;
@@ -171,6 +194,7 @@ ul {
     letter-spacing: 0.04em;
     color:#ffffff;
     margin: auto; /*треба бо є width*/
+    transition: background-color;
 }
 .button:focus,
 .button:hover {
@@ -206,6 +230,16 @@ ul {
     width: calc((100% - 72px) / 4);
 }
 
+.container-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;
+    margin-bottom: 8px;
+}
 .features-title {
     margin-bottom: 8px;
     color:#2E2F42;
