@@ -1,0 +1,341 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color:#434455;
+    background: #FFF;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+    /* навігація */
+.header {
+    padding: 24px 0;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.container-header.container,
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+
+.cont-list-link {
+    display: flex;
+    gap: 40px;
+}
+
+.cont-adress {
+    display: flex;
+    gap: 40px;
+}
+
+.logo,
+.link-logo {
+    margin-right: 76px;
+    color:#4D5AE5;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.part-of-logo {
+    color:#2E2F42;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.light-part-of-logo{
+    color: #F4F4FD;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+.adress {
+    font-style: normal;
+}
+.link-adress {
+    text-decoration: none;
+    color: #2E2F42;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.link-adress:focus,
+.link-adress:hover {
+    color: #404BBF;
+}
+
+.link-nav {
+    padding: 24px 0;
+    text-decoration: none;
+    color: #2E2F42;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+.link-nav:focus,
+.link-nav:hover {
+    color: #404BBF;
+}
+
+ /* ПЕРШИЙ БЛОК */
+.section-title {
+    background:#2E2F42;
+    padding: 188px 0;
+}
+.title {
+    margin-bottom: 48px;
+    color: #FFF;
+    text-align: center;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    line-height: 1.07;
+    max-width: 496px;
+    /*height: 120px;*/
+    margin-left: auto;
+    margin-right: auto; /*треба бо є width*/
+}
+.button {
+    text-align: center;
+    display: block;
+    padding: 16px 32px;
+    min-width: 169px; /*Для кнопки ми дивимося по макету і беремо найменшу кнопку,
+        щоб всі інші якщо в них різний контент були однаковою шириною*/
+    /*height: 56px;*/
+    border: none;
+    border-radius: 4px;
+    background:#4D5AE5;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color:#ffffff;
+    margin: auto; /*треба бо є width*/
+}
+.button:focus,
+.button:hover {
+    background:#404BBF;
+}
+
+/* ДРУГИЙ БЛОК БЕЗ НАЗВИ*/
+
+.section-features {
+    padding: 120px 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-list-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.features-title {
+    margin-bottom: 8px;
+    color:#2E2F42;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+
+.features-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* КОМАНДА */
+.section-team {
+    padding: 120px 0;
+    background:#F4F4FD;
+}
+
+.team-title {
+    margin-bottom: 72px;
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.conteiner-team {
+    display: flex;
+    gap: 24px;
+
+}
+
+.team-member-card {
+    width: calc((100% - 3 * 24px) / 4);
+    background:#FFF;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-member-info {
+    padding: 32px 0;
+}
+
+.team-member {
+    margin-bottom: 8px;
+    color: #2E2F42;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.team-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*ПОРТФОЛІО*/
+
+.portfolio {
+    padding: 120px 0;
+}
+.portfolio-title {
+    margin-bottom: 72px;
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+}
+
+.conteiner-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+}
+
+.conteiner-portfolio-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-info {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.portfolio-type {
+    margin-bottom: 8px;
+    color:#2E2F42;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+}
+
+.portfolio-text {
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+ /* ФУТЕР */
+.footer {
+    padding: 100px 0;
+    background:#2E2F42;
+}
+
+.link-logo {
+
+    display: inline-block; /* але може бути block*/
+    margin-bottom: 16px;
+}
+.footer-text {
+    width: 264px;
+    color:#F4F4FD;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
