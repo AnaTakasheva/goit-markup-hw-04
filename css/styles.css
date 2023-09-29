@@ -131,7 +131,8 @@ ul {
     
 }
 
-.link-nav::after {
+.link-nav:focus::after,
+.link-nav:hover::after {
     content: "";
     position: absolute;
     left: 0;
@@ -139,9 +140,9 @@ ul {
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
-
-
+    width: 100%;
 }
+
 
 .link-nav:focus,
 .link-nav:hover {
