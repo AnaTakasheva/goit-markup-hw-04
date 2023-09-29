@@ -131,7 +131,7 @@ ul {
     
 }
 
-.link-nav:focus::after,
+/*.link-nav:focus::after,
 .link-nav:hover::after {
     content: "";
     position: absolute;
@@ -141,8 +141,19 @@ ul {
     background-color: #404bbf;
     border-radius: 2px;
     width: 100%;
-}
+}*/
 
+.current:focus::after,
+.current:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    width: 100%; 
+}
 
 .link-nav:focus,
 .link-nav:hover {
