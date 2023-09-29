@@ -379,7 +379,7 @@ ul {
 .portfolio-item-box {
     position: relative;
     overflow: hidden;
-    transition: transform 500ms ease-out;
+    
 }
 
 .overlay {
@@ -396,7 +396,11 @@ ul {
     height: 100%;
     width: 100%;
     transform: translateY(100%);
+    transition: transform 500ms ease-out;
+}
 
+.portfolio-item-box:hover .overlay {
+    transform: translateY(0);
 }
 
 .portfolio-info {
